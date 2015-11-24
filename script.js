@@ -7,8 +7,8 @@ class LearnApp extends React.Component {
       showAns: 0 ,
       dir: [
         {dirIdx:0, dirName:"physics", questions:[{hint:"E^2=", ans:"m^2c^4+p^2c^2", your_ans:""}, {hint:"F=", ans:"ma", your_ans:""}, {hint:"Gravity g=", ans:"9.8m/s", your_ans:""} ]},
-        {dirIdx:1, dirName:"math", questions:[{hint:"e=?", ans:"2.71828", your_ans:""}, {hint:"pi=?", ans:"3.14", your_ans:""}]},
-        {dirIdx:2, dirName:"english", questions:[{hint:"I have?", ans:"an apple", your_ans:""}, {hint:"ntuee", ans:"good", your_ans:""}]}
+        {dirIdx:1, dirName:"math", questions:[{hint:"e=", ans:"2.71828", your_ans:""}, {hint:"pi=", ans:"3.14", your_ans:""}]},
+        {dirIdx:2, dirName:"english", questions:[{hint:"I have?", ans:"an apple", your_ans:""}, {hint:"ntuee is?", ans:"good", your_ans:""}]}
         ]
     };
   }
@@ -186,12 +186,8 @@ class ViewList extends React.Component {
   renderQuestionItem(item, i) {
     return (
       <div>
-        <div>
-        <label>{item.hint}</label>
-        </div>
-        <div>
-        <label>{item.ans}</label>
-        </div>
+        <div className="viewlist-hint">{item.hint}</div>
+        <div className="viewlist-ans">{item.ans}</div>
       </div>
     );
   }
@@ -201,6 +197,10 @@ class ViewList extends React.Component {
       <div> 
         <div className="heading">
           <div className="current-directory">{this.props.states.dir[this.props.states.currentDirIndex].dirName}</div>
+        </div>
+        <div>
+          <div className="viewlist-hint">hint</div>
+          <div className="viewlist-ans">ans</div>
         </div>
         <ul className="questionlist">{this.props.states.dir[this.props.states.currentDirIndex].questions.map(this.renderQuestionItem, this)}</ul>
       </div>

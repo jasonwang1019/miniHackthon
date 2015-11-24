@@ -22,6 +22,28 @@
 	border-bottom: 1px solid rgba(0, 0, 0, .10);
 }
 
+.viewlist-hint {
+	cursor: pointer;
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	width: 200px;
+	height: 60px;
+	line-height: 60px;
+}
+
+.viewlist-ans {
+	cursor: pointer;
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	width: 200px;
+	height: 60px;
+	line-height: 60px;
+}
+
+
+
 /* dir */
 
 .learning-title {
@@ -45,6 +67,7 @@
 }
 
 .dir-item_right {
+	color: blue;
 	float: left;
 	width: calc(100% - 90px);
 	padding: 20px 10px;
@@ -62,19 +85,6 @@
 	font-size: 14px;
 }
 
-.dir-time {
-	color: rgba(0, 0, 0, .40);
-	position: absolute;
-	top: 23px;
-	right: 13px;
-	font-size: 14px;
-}
-
-.img-circle {
-	border-radius: 50%;
-}
-
-
 .mode-button {
 	cursor: pointer;
 	display: inline-block;
@@ -87,66 +97,11 @@
 	background-color: #c8c9cb;
 }
 
-
-/* message */
-
 .current-directory	 {
 	line-height: 60px;
 	font-size: 16px;
 }
 
-.message-list {
-	padding-top: 10px;
-	height: calc(100% - 118px);
-}
-
-.message-item {
-	line-height: 2em;
-	margin: 10px 0;
-}
-
-.footer {
-	border-top: 1px solid rgba(0, 0, 0, .10);
-	height: 50px;
-}
-
-.message-from-other {
-	padding-left: 25px;
-	text-align: left;
-}
-
-.message-from-me {
-	padding-right: 25px;
-	text-align: right;
-}
-
-.message-from-other span {
-	display: inline-block;
-	border-top-left-radius: 1.3em;
-	border-top-right-radius: 1.3em;
-	border-bottom-left-radius: 1.3em;
-	border-bottom-right-radius: 1.3em;
-	border: 1px solid rgba(0, 0, 0, .10);
-	padding: 0 15px;
-	color: black;
-	background-color: rgba(255, 255, 255, .10);
-}
-
-.message-from-me span {
-	display: inline-block;
-	border-top-left-radius: 1.3em;
-	border-top-right-radius: 1.3em;
-	border-bottom-left-radius: 1.3em;
-	border-bottom-right-radius: 1.3em;
-	padding: 0 15px;
-	color: white;
-	background-color: #0084ff;
-}
-
-.new-message {
-	width: 100%;
-	height: 100%;
-}
 
 /* clearfix 
  * http://stackoverflow.com/questions/211383/which-method-of-clearfix-is-best
